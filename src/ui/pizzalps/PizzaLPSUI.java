@@ -29,13 +29,13 @@ public class PizzaLPSUI extends javax.swing.JFrame {
 
         jComboBox2 = new javax.swing.JComboBox<>();
         jPanel1 = new javax.swing.JPanel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jLabel3 = new javax.swing.JLabel();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
+        jComboBoxTamanho = new javax.swing.JComboBox<>();
+        jLabelTamanho = new javax.swing.JLabel();
+        jLabelRecheioBorda = new javax.swing.JLabel();
+        jComboBoxRecheioBorda = new javax.swing.JComboBox<>();
+        jLabelSabor = new javax.swing.JLabel();
+        jComboBoxSabor = new javax.swing.JComboBox<>();
+        jButtonPronto = new javax.swing.JButton();
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -43,25 +43,25 @@ public class PizzaLPSUI extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Pizza"));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Brotinho", "Média", "Família" }));
-        jComboBox1.setToolTipText("");
+        jComboBoxTamanho.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Brotinho", "Média", "Família" }));
+        jComboBoxTamanho.setToolTipText("");
 
-        jLabel1.setText("Tamanho:");
+        jLabelTamanho.setText("Tamanho:");
 
-        jLabel2.setText("Recheio da Borda:");
+        jLabelRecheioBorda.setText("Recheio da Borda:");
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Sem Recheio", "Catupiry", "Chedar", "Merda" }));
-        jComboBox3.addActionListener(new java.awt.event.ActionListener() {
+        jComboBoxRecheioBorda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Sem Recheio", "Catupiry", "Chedar", "Merda" }));
+        jComboBoxRecheioBorda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox3ActionPerformed(evt);
+                jComboBoxRecheioBordaActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Sabor:");
+        jLabelSabor.setText("Sabor:");
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Frango com Catupiry", "Calabresa", "Mussarela", "Marguerita" }));
+        jComboBoxSabor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " ", "Frango com Catupiry", "Calabresa", "Mussarela", "Marguerita" }));
 
-        jButton1.setText("Pronto");
+        jButtonPronto.setText("Pronto");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -70,17 +70,17 @@ public class PizzaLPSUI extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
+                    .addComponent(jButtonPronto)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel3))
+                            .addComponent(jLabelRecheioBorda)
+                            .addComponent(jLabelTamanho)
+                            .addComponent(jLabelSabor))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jComboBoxSabor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBoxTamanho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jComboBoxRecheioBorda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(141, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -88,18 +88,18 @@ public class PizzaLPSUI extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addComponent(jComboBoxTamanho, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelTamanho))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelRecheioBorda)
+                    .addComponent(jComboBoxRecheioBorda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabelSabor)
+                    .addComponent(jComboBoxSabor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(jButtonPronto)
                 .addGap(38, 38, 38))
         );
 
@@ -123,9 +123,9 @@ public class PizzaLPSUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
+    private void jComboBoxRecheioBordaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxRecheioBordaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox3ActionPerformed
+    }//GEN-LAST:event_jComboBoxRecheioBordaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,14 +163,14 @@ public class PizzaLPSUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JButton jButtonPronto;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JComboBox<String> jComboBoxRecheioBorda;
+    private javax.swing.JComboBox<String> jComboBoxSabor;
+    private javax.swing.JComboBox<String> jComboBoxTamanho;
+    private javax.swing.JLabel jLabelRecheioBorda;
+    private javax.swing.JLabel jLabelSabor;
+    private javax.swing.JLabel jLabelTamanho;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
