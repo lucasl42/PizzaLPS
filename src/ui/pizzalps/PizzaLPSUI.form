@@ -20,10 +20,11 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Montar Pizza"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -87,8 +88,9 @@
                               <Component id="jComboBoxRecheioBorda" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <Component id="jCheckBoxMolho" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="141" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -110,7 +112,9 @@
                       <Component id="jLabelSabor" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jComboBoxSabor" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="59" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jCheckBoxMolho" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="18" max="32767" attributes="0"/>
                   <Component id="jButtonPronto" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
               </Group>
@@ -121,15 +125,17 @@
         <Component class="javax.swing.JComboBox" name="jComboBoxTamanho">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="4">
-                <StringItem index="0" value=" "/>
-                <StringItem index="1" value="Brotinho"/>
-                <StringItem index="2" value="M&#xe9;dia"/>
-                <StringItem index="3" value="Fam&#xed;lia"/>
+              <StringArray count="3">
+                <StringItem index="0" value="Brotinho"/>
+                <StringItem index="1" value="M&#xe9;dia"/>
+                <StringItem index="2" value="Fam&#xed;lia"/>
               </StringArray>
             </Property>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxTamanhoActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
@@ -147,18 +153,13 @@
         <Component class="javax.swing.JComboBox" name="jComboBoxRecheioBorda">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="5">
-                <StringItem index="0" value=" "/>
-                <StringItem index="1" value="Sem Recheio"/>
-                <StringItem index="2" value="Catupiry"/>
-                <StringItem index="3" value="Chedar"/>
-                <StringItem index="4" value="Merda"/>
+              <StringArray count="3">
+                <StringItem index="0" value="Sem Recheio"/>
+                <StringItem index="1" value="Catupiry"/>
+                <StringItem index="2" value="Cheddar"/>
               </StringArray>
             </Property>
           </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxRecheioBordaActionPerformed"/>
-          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
@@ -171,12 +172,11 @@
         <Component class="javax.swing.JComboBox" name="jComboBoxSabor">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="5">
-                <StringItem index="0" value=" "/>
-                <StringItem index="1" value="Frango com Catupiry"/>
-                <StringItem index="2" value="Calabresa"/>
-                <StringItem index="3" value="Mussarela"/>
-                <StringItem index="4" value="Marguerita"/>
+              <StringArray count="4">
+                <StringItem index="0" value="Frango com Catupiry"/>
+                <StringItem index="1" value="Calabresa"/>
+                <StringItem index="2" value="Mussarela"/>
+                <StringItem index="3" value="Marguerita"/>
               </StringArray>
             </Property>
           </Properties>
@@ -188,6 +188,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Pronto"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonProntoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="jCheckBoxMolho">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Molho de tomate"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxMolhoActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
